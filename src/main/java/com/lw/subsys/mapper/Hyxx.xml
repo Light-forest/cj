@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.HyxxMapper">
+	<insert id="add" parameterType="Hyxx" >
+		insert into hyxx ( hyid,dlzh,dlmm,hymc,hyjb,zcrq,hyzt,lxdh,yjdz,qqhm,msnh,txdz,yzbm,bzxx,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09 ) values (#{hyid},#{dlzh},#{dlmm},#{hymc},#{hyjb},#{zcrq},#{hyzt},#{lxdh},#{yjdz},#{qqhm},#{msnh},#{txdz},#{yzbm},#{bzxx},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from hyxx where hyid= #{hyid}
+	</delete>
+	<update id="update" parameterType="Hyxx" >
+		update hyxx set hyid=#{hyid},dlzh=#{dlzh},dlmm=#{dlmm},hymc=#{hymc},hyjb=#{hyjb},zcrq=#{zcrq},hyzt=#{hyzt},lxdh=#{lxdh},yjdz=#{yjdz},qqhm=#{qqhm},msnh=#{msnh},txdz=#{txdz},yzbm=#{yzbm},bzxx=#{bzxx},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09} where hyid=#{hyid}
+	</update>
+
+	<select id="list" resultType="Hyxx" >
+		select * from  hyxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from hyxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Hyxx">
+		select * from   hyxx  where hyid= #{hyid}
+	</select>
+</mapper>

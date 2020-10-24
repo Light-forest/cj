@@ -1,0 +1,145 @@
+.body-bg{ background: #f0efef;}
+.header{
+	background: #1a1a1a;	
+}
+.user-center{
+	color: #808080;
+}
+.user-center li a{ color: #fff;}
+.user-center li a .btn-circle{ background: #1a1a1a;}
+.user-center li a .btn-circle .fa{ color: #ed6519; font-size: 16px;}
+.account-area{
+	background: #34404e;
+	color: #fff;
+}
+.account-area:after{
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #34404e;
+    border-left: 6px solid transparent;
+}
+.account-area a{ color: #fff;}
+.account-area a:hover{color: #38cddc;}
+.account-area-header{ border-bottom: 1px #4d5d70 solid;}
+.account-area-footer{ padding: 3px 15px 5px 15px; border-top: 1px #4d5d70 solid;}
+.sidebar{
+    background-color: #fff;
+}
+
+.brand{
+	background: #ed6519;
+}
+.brand .icon-hospital{
+	color: #fff!important;
+}
+.brand .brand-caption-sub{
+	color: #fff;
+}
+.menu-min .brand p{ display: none;}
+.nav-list > li {
+	border-color: #eee;
+}
+.nav-list > li > a {
+	color: #666;
+}
+.nav-list > li:before {
+  background-color: #ed6519;
+}
+.nav-list > li .submenu > li > a {
+	color: #333;
+	border-bottom: 1px #eee dotted;
+}
+.nav-list > li > .submenu > li:before {
+	border: 1px dotted;
+    border-width: 1px 0 0;
+    border-color: #d9d9d9;
+}
+.nav-list > li > .submenu {
+  border-top: 1px solid #e5e5e5;
+}
+.nav-list > li > .submenu:before {
+  border-right: 1px #e5e5e5 dotted;
+}
+.nav-list li.active > a:after {
+  border-right-color: #ed6519;
+  -moz-border-right-colors: #ed6519;
+}
+.nav-list > li.active:after {
+  border-color: #fff;
+}
+.nav-list > li > .submenu li.open > a {
+  color: #222;
+  background: #f0f0f0;
+}
+.tabs-card li:hover {
+	color: #ed6519;
+}
+.tabs-brief li:hover {
+	color: #ed6519;
+}
+.tabs-brief li.active{
+	border-bottom: 2px #ed6519 solid;
+}
+.widget{background: #fff;}
+.widget-header{position: relative; min-height: 24px; border-bottom:none; background: #fff; }
+.widget-caption{padding:8px 10px; color: #444;border-bottom: 1px #f2f2f2 solid;}
+.ibox{
+	background: #393d40;
+	border-radius: 3px;
+	color: #c7c7c7;
+}
+.ibox-header{ padding: 3px 15px; background: #393d40; border-bottom: 1px #45494c solid;}
+.ibox-body li{	
+	border-bottom: 1px #45494c solid;
+}
+.ibox-body li a{
+	color:#c7c7c7;
+}
+.ibox-body li a:hover{
+	color:#fff;	
+	background-color:#ed6519;
+	background-image:-moz-linear-gradient(top, #ff8a34, #ed6519);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ff8a34), to(#ed6519));
+	background-image:-webkit-linear-gradient(top, #ff8a34, #ed6519);
+	background-image:-o-linear-gradient(top, #ff8a34, #ed6519);
+	background-image:linear-gradient(to bottom, #ff8a34, #ed6519);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff8a34', endColorstr='#ffed6519', GradientType=0)
+}
+.ibox-footer{background: #393d40; border-top: 1px #45494c solid;}
+
+.tag-fornt {
+	background-color: #ed6519;    
+    color: #fff;       
+}
+
+/*btn*/
+.btn-primary,.badge-primary,.label-primary{ background: #ed6519; color: #fff; }
+.btn-primary:hover{ background: #d4550d; }
+
+.search{ background: #f9f9f9;color: #666;}
+.select-group ul li.on {
+	background-color: #ed6519;
+}
+.form-control-addon{ color: #666;}
+
+.table-headBg thead th{background:#f0f0f0!important;color: #555!important;}
+.iradio_flat{
+	background: url(../../images/form/iradio_flat_orange.png) no-repeat!important;
+}
+
+/* 引用 */.quote-elem{border-left-color:#ed6519;}
+/*步骤条*/
+.step-container li.step-past {background-color: #ed6519;}  
+.step-container li.step-current {background-color: #f77a34;  }  
+.step-container .arrow-past .arrow-pre { border-left: 15px solid #ed6519;}  
+.step-container .arrow-past .arrow-next{border-top: 15px solid #f77a34;border-bottom: 15px solid #f77a34; } 
+.step-container .arrow-past .arrow-after{ border-top: 15px solid #ed6519;border-bottom: 15px solid #ed6519; }
+.step-container .arrow-current .arrow-pre { border-left: 15px solid #f77a34;  }  
+.step-fix-width-round .finished .round{border:4px solid #ed6519;background-color:#ed6519;}
+.step-fix-width-round .finished .bar{background-color: #ed6519;}
+.step-fix-width-round .current .round{border:4px solid #f77a34;color:#fff;background-color:#f77a34;}
+.step-fix-width-round .current .bar{background-color: #f77a34;}
+.steps-round-auto .finished .round{border: 4px solid #ed6519;background-color: #ed6519;}
+.steps-round-auto .finished .bar{background-color: #ed6519;}
+.steps-round-auto .current .round{border:4px solid #f77a34;color: #FFFFFF;background-color: #f77a34;}
+.steps-round-auto .current .bar{background-color: #f77a34;}

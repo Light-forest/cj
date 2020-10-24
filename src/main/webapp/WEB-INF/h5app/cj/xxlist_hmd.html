@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>黑名单</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content=""> 
+    
+    <!-- begin jqueryWeUI 头部CSS配置-->
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css"> 
+    <!--end jqueryWeUI 头部CSS配置-->
+
+    <link rel="stylesheet" href="../jdavid/a.view.css">
+
+    <style>
+      .swiper-container {
+          width: 100%;
+          height: 160px;
+      }
+
+      .swiper-container img {
+          display: block;
+          width: 100%;
+          height: 160px;
+      }
+    </style>
+
+
+  </head> 
+  <body ontouchstart >
+    <!-- begin 页头-->
+    <header class='demos-header-lw'>
+        <div class="weui-flex">
+            <div><a href="home.html" class="placeholder-lw"> <返回 </a></div>
+            <div class="weui-flex__item">
+              <div class="placeholder-lw" id="divHeadTitle">黑名单</div>
+            </div>
+            <div><div class="placeholder-lw"></div></div>
+        </div> 
+    </header>
+    <!-- end 页头-->
+
+
+
+
+    <div class="bd">
+        <div class="page__bd">
+
+			<div class="weui-cells" id="divXxlist">
+
+			</div>
+			<div class="weui-cells" id="divXxlist_bak" style="display:none;">
+			
+			  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="width:70px;">
+										  <img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+											<h6>
+												哥德堡战队
+											</h6>
+										</td>
+										<td style="text-align:left;padding-right:20px;width:180px;">
+											<h6>
+												拉黑原因：<span style="color:red;font-weight:bold;">开挂吃鸡</span>
+											</h6>
+										</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+				<!--begin 单个信息 -->
+				<div class="weui-cell weui-cell_swiped">
+					<div class="weui-cell__bd">
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+								<tr>
+									<td style="color:orange;width:30px;">1</td>
+									<td style="width:70px;">
+										<img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+									</td>
+									<td style="padding-left:10px; text-align:left;font-weight:bold; ">
+										<h6>
+											哥德堡战队
+										</h6>
+									</td>
+									<td style="text-align:left;padding-right:20px;width:80px;">
+										<h6>
+											吃鸡<span style="color:red;font-weight:bold;">128</span>次,
+											<br/>
+											奖金<span style="color:red;font-weight:bold;">20000</span>元
+										</h6>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--end 单个信息 -->
+			  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">2</td>
+										<td style="width:70px;">
+										  <img src="images/c2.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">3</td>
+										<td style="width:70px;">
+										  <img src="images/c3.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">4</td>
+										<td style="width:70px;">
+										  <img src="images/c4.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">5</td>
+										<td style="width:70px;">
+										  <img src="images/c5.png" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">6</td>
+										<td style="width:70px;">
+										  <img src="images/c6.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">7</td>
+										<td style="width:70px;">
+										  <img src="images/c1.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+  
+               <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">8</td>
+										<td style="width:70px;">
+										  <img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+
+              <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">9</td>
+										<td style="width:70px;">
+										  <img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+              <!--begin 单个信息 -->
+                <div class="weui-cell weui-cell_swiped">         
+					<div class="weui-cell__bd">             
+						<div class="weui-cell">
+							<table style="width:100%;">
+								<tbody>
+									<tr>
+										<td style="color:orange;width:30px;">10</td>
+										<td style="width:70px;">
+										  <img src="images/avatar.jpg" style="width:60px;height:60px; border-radius:50px">
+										</td>
+										<td style="padding-left:10px; text-align:left;font-weight:bold;"> 哥德堡战队  
+										
+										</td>
+										<td style="text-align:left;padding-right:20px;width:200px;">  吃鸡<span style="color:red;font-weight:bold;">128</span>次,奖金<span style="color:red;font-weight:bold;">20000</span>元</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>     
+					</div>   
+				</div>
+                <!--end 单个信息 -->
+			
+			 
+ 
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <br/>
+
+
+	<!-- begin 底部tabbar-->
+	<div class="weui-tabbar weui-tabbar-lw">
+		<a href="home.html" class="weui-tabbar__item weui-bar__item--on" id="aDown1">
+			<div class="weui-tabbar__icon">
+				<img src="./images/i1.png" alt="">
+			</div>
+			<p class="weui-tabbar__label">馋猫赛事</p>
+		</a>
+		<a href="bm.html" class="weui-tabbar__item"  id="aDown2">
+			<div class="weui-tabbar__icon">
+				<img src="./images/i2.png" alt="">
+			</div>
+			<p class="weui-tabbar__label">报名参赛</p>
+		</a>
+
+		<a href="my.html" class="weui-tabbar__item" id="aDown4">
+			<div class="weui-tabbar__icon">
+				<img src="./images/i4.png" alt="">
+			</div>
+			<p class="weui-tabbar__label">我</p>
+		</a>
+
+	</div>
+	<!-- end 底部tabbar-->
+	
+	<div id="picker-container"></div>
+	
+	
+    <!-- begin jqueryWeUI 底部js配置-->
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script src="../js/jquery-weui.min.js"></script>
+    <!-- end jqueryWeUI 底部js配置-->
+
+	<script src="../jdavid/e.util.js?Math.random()"></script>
+
+	<script src="../jdavid/f.request.js"></script>
+    <script src="../jdavid/z.proj.js"></script>
+
+    <script src="xxlist_hmd.js"></script>
+    <script>
+    </script>
+
+	
+  </body>
+</html>

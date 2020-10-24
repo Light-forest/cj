@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>牛哥吃鸡</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content=""> 
+    
+    <!-- begin jqueryWeUI 头部CSS配置-->
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css"> 
+    <!--end jqueryWeUI 头部CSS配置-->
+
+    <link rel="stylesheet" href="../jdavid/a.view.css">
+
+    <style>
+      .swiper-container {
+          width: 100%;
+          height: 160px;
+      }
+
+      .swiper-container img {
+          display: block;
+          width: 100%;
+          height: 160px;
+      }
+    </style>
+
+
+  </head> 
+  <body ontouchstart >
+      <input id="curHyid"  style="display:none;" />
+      <input id="curHymc"  style="display:none;" />
+
+    <!-- begin 页头-->
+    <header class='demos-header-lw'>
+        <div class="weui-flex">
+
+            <div class="weui-flex__item">
+                <div class="placeholder-lw" id="divTitle">牛哥吃鸡</div>
+            </div> 
+
+        </div> 
+    </header>
+    <!-- end 页头-->
+
+
+
+    <!-- begin 滚动图片-->
+    <div class="swiper-container" style="display:; height:200px;">
+
+        <div class="swiper-wrapper" id="div_swiper" style=" height:200px;">
+            
+            <div class="swiper-slide"><img src="./images/c1.jpg" style=" height:200px;"/></div>
+            <div class="swiper-slide"><img src="./images/c2.jpg" style=" height:200px;"/></div>
+            <div class="swiper-slide"><img src="./images/c3.jpg" style=" height:200px;"/></div>
+            <div class="swiper-slide"><img src="./images/c4.jpg" style=" height:200px;"/></div>
+            <div class="swiper-slide"><img src="./images/c5.png" style=" height:200px;"/></div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- end 滚动图片-->
+	
+
+    <!-- begin 快捷按钮-->
+    <div class="weui-flex">
+        <div class="weui-flex__item weui-flex__item-lw">
+            <a href="#" id="aA">
+                <img src="images/a.png" style="width: 60%;"/><br/><p>参赛规则</p>
+            </a>
+        </div>
+        <div class="weui-flex__item weui-flex__item-lw">
+            <a href="#" id="aB">
+                <img src="images/b.png" style="width: 60%;"/><br/><p>奖金</p>
+            </a>
+        </div>
+
+        <div class="weui-flex__item weui-flex__item-lw">
+            <a href="#" id="aC">
+                <img src="images/c.png" style="width: 60%;"/><br/><p>参赛人数</p>
+            </a>
+        </div>
+    </div>
+      <div class="weui-flex">
+      <div class="weui-flex__item weui-flex__item-lw">
+            <a href="#" id="aD">
+                <img src="images/d.png" style="width: 60%;"/><br/><p>比赛结果</p>
+            </a>
+        </div>
+
+
+
+          <div class="weui-flex__item weui-flex__item-lw">
+              <a href="#" id="aE">
+                  <img src="images/a.png" style="width: 60%;"/><br/><p>黑名单</p>
+              </a>
+          </div>
+
+          <div class="weui-flex__item weui-flex__item-lw">
+              <a href="#" id="aF">
+                  <img src="" style="width: 60%;" alt=""/><br/><p></p>
+              </a>
+          </div>
+
+      </div>
+	 <!-- end 快捷按钮-->
+   
+	
+	
+
+
+    <!-- begin 底部tabbar-->
+    <div class="weui-tabbar weui-tabbar-lw">
+        <a href="home.html" class="weui-tabbar__item weui-bar__item--on" id="aDown1">
+            <!--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+            -->
+            <div class="weui-tabbar__icon">
+                <img src="./images/i1.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">吃鸡赛事</p>
+        </a>
+        <a href="xxlist.html" class="weui-tabbar__item"  id="aDown2">
+            <div class="weui-tabbar__icon">
+                <img src="./images/i2.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">报名参赛</p>
+        </a>
+
+        <a href="my.html" class="weui-tabbar__item" id="aDown4">
+            <div class="weui-tabbar__icon">
+                <img src="./images/i4.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">我</p>
+        </a>
+
+    </div>
+    <!-- end 底部tabbar-->
+
+    <!-- begin jqueryWeUI 底部js配置-->
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script src="../js/jquery-weui.min.js"></script>
+    <!-- end jqueryWeUI 底部js配置-->
+
+    <script src="../js/swiper.js"></script>
+    <script src="../jdavid/e.util.js"></script> 
+    <script src="../jdavid/f.request.js"></script>
+    <script src="../jdavid/z.proj.js"></script>
+    
+       
+    <script src="home.js"></script>
+
+    <script>
+
+    </script>
+
+  </body>
+</html>

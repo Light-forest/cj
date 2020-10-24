@@ -1,0 +1,73 @@
+/*@功能：1、定义项目的框架样式
+ */ 
+.login-bg{ 
+	background:#0bc0b7 url(../../images/login/loginBg-green.jpg) center center;
+	background-size: cover;
+	overflow: hidden;
+}
+.login-head-warp{ background: #323436;height: 68px; }
+.login-head-content{ width: 1000px; margin: auto;}
+.login-head-warp .icon-hospital{
+	color: #0bc0b7;
+	font-size: 32px;	
+	margin-top: 17px;
+	margin-right: 5px;
+	float: left;
+}
+.login-head-warp .login-brand{
+	font-size: 24px;
+	color: #fff;
+	float: left;
+	line-height: 66px;
+}
+.login-head-warp:after{display: table; content: " "; clear: both; }
+.login-warp{ width: 1000px; margin: auto; position: relative;}
+.login-box{ 
+	background:#fff;
+	border-radius: 8px; 
+	box-shadow: 0 2px 3px rgba(0,0,0,0.5); 
+	width: 362px; 
+	padding: 0 40px 0 40px;  
+	margin-top: 150px; 
+	height: 318px; 
+	position: absolute; 
+	right: 10px;
+}
+.caption-warp{ 
+	color: #354047; 
+	font-size: 16px; 
+	font-weight:700; 
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 1px #e8e8e8 solid;
+	background-color:#f5f5f5;
+	margin-left: -40px;
+	margin-right: -40px;
+	background-image:-moz-linear-gradient(top, #ffffff, #f0f0f0);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));
+	background-image:-webkit-linear-gradient(top, #ffffff, #f0f0f0);
+	background-image:-o-linear-gradient(top, #ffffff, #f0f0f0);
+	background-image:linear-gradient(to bottom, #ffffff, #f0f0f0);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fff0f0f0', GradientType=0)
+}
+.login-form{ margin: 15px 0 0 0;}
+.login-form li{ clear: both; height: 44px; padding: 15px 0;}
+.login-icon{float: left; font-size: 14px; text-align: center; vertical-align: middle; width: 44px; height: 44px; line-height: 44px; background: #e6e6e6; color: #999; border-radius: 3px 0 0 3px;}
+.login-input{ height: 44px; line-height: 40px; width: 238px; padding: 0 20px; background: #fff; border: none; border-radius: 0 3px 3px 0; font-size: 14px; border-top: 1px #e6e6e6 solid; border-right: 1px #e6e6e6 solid; border-bottom: 1px #e6e6e6 solid;}
+.showpwd-warp{ position: relative; margin: 10px 0;}
+.showpwd{ display:inline-block; width:16px; height:16px; background:url(../../images/login/showPwd.png) no-repeat center center; background-size:16px 16px; cursor:pointer; position: absolute; right: 10px; top: 28px; z-index: 2;}
+.showpwd.hidepwd{ background-image:url(../../images/login/hidePwd.png);}
+.error{ visibility: hidden;}
+.btn{box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.copyright { color: #02656f; text-align: center; position: fixed; bottom: 50px;  width: 100%;}
+.copyright .icon-bsoftlogo{ font-size: 20px; vertical-align: middle;}
+
+.btn-primary,.badge-primary,.label-primary{ background: #1fb5ac; color: #fff; }
+.btn-primary:hover{ background: #13a098; }
+.icheckbox_flat,
+.iradio_flat{
+	background-image: url(../../images/form/iradio_flat_green.png);
+}

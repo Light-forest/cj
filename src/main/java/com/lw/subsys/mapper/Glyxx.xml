@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.GlyxxMapper">
+	<insert id="add" parameterType="Glyxx" >
+		insert into glyxx ( glyid,glyzh,glymc,glymm,glyyx,glyzw,glyjs,glyms,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09 ) values (#{glyid},#{glyzh},#{glymc},#{glymm},#{glyyx},#{glyzw},#{glyjs},#{glyms},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from glyxx where glyid= #{glyid}
+	</delete>
+	<update id="update" parameterType="Glyxx" >
+		update glyxx set glyid=#{glyid},glyzh=#{glyzh},glymc=#{glymc},glymm=#{glymm},glyyx=#{glyyx},glyzw=#{glyzw},glyjs=#{glyjs},glyms=#{glyms},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09} where glyid=#{glyid}
+	</update>
+
+	<select id="list" resultType="Glyxx" >
+		select * from  glyxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from glyxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Glyxx">
+		select * from   glyxx  where glyid= #{glyid}
+	</select>
+</mapper>

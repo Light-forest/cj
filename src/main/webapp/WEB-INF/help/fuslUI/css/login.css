@@ -1,0 +1,29 @@
+/*@功能：1、定义项目的框架样式
+ */ 
+.login-bg{ 
+	background:#000c30 url(../images/login/loginBg-dark-blue.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.login-warp{ width: 400px; margin: auto; margin-top: 110px;}
+.login-caption{ font-size: 32px; color: #fff;text-align: center;}
+.login-caption .icon-hospital{ color: #28cedf;}
+.login-box{ margin-top:60px; background: url(../images/login/login-box.png); padding: 30px 40px; width: 400px; height: 307px;}
+.caption-s{ color: #072c68; font-size: 16px;}
+.login-form{ margin-top: 15px;}
+.login-form li{ clear: both; height: 44px; padding: 15px 0;}
+.login-icon{float: left; font-size: 14px; text-align: center; vertical-align: middle; width: 44px; height: 44px; line-height: 44px; background: #2160b2; color: #fff; border-radius: 3px 0 0 3px;}
+.login-input{ height: 44px; line-height: 40px; width: 273px; padding: 0 20px; background: #91e5ff; border: none; border-radius: 0 3px 3px 0; font-size: 14px;}
+.showpwd-warp{ position: relative; margin: 10px 0;}
+.showpwd{ display:inline-block; width:16px; height:16px; background:url(../images/login/showPwd.png) no-repeat center center; background-size:16px 16px; cursor:pointer; position: absolute; right: 10px; top: 28px; z-index: 2;}
+.showpwd.hidepwd{ background-image:url(../images/login/hidePwd.png);}
+.error{ visibility: hidden;}
+.btn{box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.copyright { color: #28b7e0; text-align: center;}
+.copyright .icon-bsoftlogo{ font-size: 20px; vertical-align: middle;}
+
+.loginBg-orange{
+	background:#000c30 url(../images/login/loginBg-orange.jpg) center center;
+	background-size: cover;
+	overflow: hidden;
+}

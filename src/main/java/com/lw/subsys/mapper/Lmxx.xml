@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.LmxxMapper">
+	<insert id="add" parameterType="Lmxx" >
+		insert into lmxx ( lmid,lmbh,lmsx,zwbt,ywbt,lmtp,zwsm,ywsm,djzx,bjsj,bjry,fuid,fumc,lmlj,wldz,lmzt,gjcy,wzsl,djsl,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09 ) values (#{lmid},#{lmbh},#{lmsx},#{zwbt},#{ywbt},#{lmtp},#{zwsm},#{ywsm},#{djzx},#{bjsj},#{bjry},#{fuid},#{fumc},#{lmlj},#{wldz},#{lmzt},#{gjcy},#{wzsl},#{djsl},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from lmxx where lmid= #{lmid}
+	</delete>
+	<update id="update" parameterType="Lmxx" >
+		update lmxx set lmid=#{lmid},lmbh=#{lmbh},lmsx=#{lmsx},zwbt=#{zwbt},ywbt=#{ywbt},lmtp=#{lmtp},zwsm=#{zwsm},ywsm=#{ywsm},djzx=#{djzx},bjsj=#{bjsj},bjry=#{bjry},fuid=#{fuid},fumc=#{fumc},lmlj=#{lmlj},wldz=#{wldz},lmzt=#{lmzt},gjcy=#{gjcy},wzsl=#{wzsl},djsl=#{djsl},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09} where lmid=#{lmid}
+	</update>
+
+	<select id="list" resultType="Lmxx" >
+		select * from  lmxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from lmxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Lmxx">
+		select * from   lmxx  where lmid= #{lmid}
+	</select>
+</mapper>

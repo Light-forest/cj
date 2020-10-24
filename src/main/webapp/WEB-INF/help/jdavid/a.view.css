@@ -1,0 +1,113 @@
+/*
+.table-info thead tr th a{
+	color:white;!important;
+	font-size:12px;!important;
+	line-height:13px;!important;
+	height:13px;!important;
+	font-weight: normal;
+
+}
+
+.table-info thead tr th {
+	vertical-align: middle;!important;
+	font-size:12px;!important;
+	line-height:13px;!important;
+	height:30px;!important;
+}
+*/
+
+body div{
+	padding-left:0px;
+	padding-right:0px;
+
+}
+.col-xs-2{
+	margin-left:0px;
+	margin-bottom:1px;
+	margin-top:1px;
+	padding-left:0px;
+	padding-right:0px;
+}
+.col-xs-3{
+	margin-left:0px;
+	margin-bottom:2px;
+	margin-top:2px;
+
+	padding-left:0px;
+	padding-right:02px;
+}
+
+.col-xs-3{
+	margin-left:0px;
+	margin-bottom:2px;
+	margin-top:2px;
+
+	padding-left:0px;
+	padding-right:02px;
+}
+.col-xs-12{
+	margin-left:0px;
+	margin-bottom:1px;
+	margin-top:1px;
+	padding-left:0px;
+	padding-right:0px;
+}
+th{
+	background-color:#fff;
+	text-align:center;
+}
+
+.input-group-addon{
+	font-size:12px;
+	width:60px;
+}
+.form-control{
+	font-size:12px;
+	width:400px;
+}
+td{
+	font-size:12px;
+}
+.form-group{
+	width: 100%;
+}
+.form-group span{
+	margin-bottom:5px;
+}
+.form-group div{
+	margin-bottom:5px;
+}
+.btn-xs{
+	margin-left:2px;
+	margin-bottom:1px;
+	margin-top:1px;
+}
+form{
+	margin:5px;
+}
+.btn{
+	margin-left:2px;
+	margin-bottom:1px;
+	margin-top:1px;
+}
+.row{
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:1px;
+	padding-left:20px;
+	padding-right:5px;
+
+}
+.alert{
+	margin:5px;
+}
+.panel-heading-with-btn{
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+
+.container-fluid{
+	padding-left:0px;
+	padding-right:0px;
+}

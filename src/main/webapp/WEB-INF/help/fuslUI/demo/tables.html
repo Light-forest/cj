@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表格组件</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+
+    <!--基本样式-->
+    <link rel="stylesheet" href="../../jfusl/css/base.css" />
+    <link rel="stylesheet" href="../../jfusl/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../jfusl/css/frame.css" />
+    <link rel="stylesheet" href="../../jfusl/css/element.css"/>
+    <!--特效插件-->
+    <link rel="stylesheet" href="../../jfusl/css/skins/blue.css" class="skin-color" />
+
+</head>
+<body class="body-bg">
+<div class="main-container">
+  <div class="sidebar">
+    <div class="brand">
+      <div class="icon-hospital" title="信息管理系统"></div>
+      <p class="brand-caption">信息管理系统</p>
+      <p class="brand-caption-sub">某某信息系统</p>
+    </div>
+    <ul class="nav nav-list">
+      <li><a href="index.html"><i class="menu-icon fa fa-home"></i><span class="menu-text">首页</span></a><b class="arrow"></b></li>
+      <li><a href="doc.html"><i class="menu-icon fa fa-hand-o-right"></i><span class="menu-text">开始使用</span></a><b class="arrow"></b></li>
+      <li><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-pencil-square-o"></i><span class="menu-text">表单</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+        	<li><a href="forms.html"><i class="menu-icon fa fa-caret-right"></i>表单合集</a><b class="arrow"></b></li>
+          <li><a href="form-validate.html"><i class="menu-icon fa fa-caret-right"></i>表单验证</a><b class="arrow"></b></li>
+          <li><a href="form-element.html"><i class="menu-icon fa fa-caret-right"></i>表单组件</a><b class="arrow"></b></li>
+          <li><a href="search.html"><i class="menu-icon fa fa-caret-right"></i>查询区</a><b class="arrow"></b></li><li><a href="tree.html"><i class="menu-icon fa fa-caret-right"></i>树列表视图</a><b class="arrow"></b></li>
+          <li><a href="date-time.html"><i class="menu-icon fa fa-caret-right"></i>日期时间选择</a><b class="arrow"></b></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-diamond"></i><span class="menu-text">文字和图标</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+          <li><a href="global.html"><i class="menu-icon fa fa-caret-right"></i>全局文本样式</a><b class="arrow"></b></li>
+          <li><a href="icons.html"><i class="menu-icon fa fa-caret-right"></i>图标</a><b class="arrow"></b></li>
+          <li><a href="buttons.html"><i class="menu-icon fa fa-caret-right"></i>按钮元素</a><b class="arrow"></b></li> 
+          <li><a href="label.html"><i class="menu-icon fa fa-caret-right"></i>Label</a><b class="arrow"></b></li>
+        </ul>
+      </li>
+      <li class="open"><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-table"></i><span class="menu-text">表格和布局</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+          <li><a href="tables.html"><i class="menu-icon fa fa-caret-right"></i>表格</a><b class="arrow"></b></li>
+          <li><a href="colors-table.html"><i class="menu-icon fa fa-caret-right"></i>表格配色</a><b class="arrow"></b></li>
+          <li><a href="pagination.html"><i class="menu-icon fa fa-caret-right"></i>分页器</a><b class="arrow"></b></li>
+          <li><a href="ranking.html"><i class="menu-icon fa fa-caret-right"></i>排名</a><b class="arrow"></b></li>
+          <li><a href="grid.html"><i class="menu-icon fa fa-caret-right"></i>栅格</a><b class="arrow"></b></li>
+          <li><a href="layout.html"><i class="menu-icon fa fa-caret-right"></i>布局</a><b class="arrow"></b></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-navicon"></i><span class="menu-text">提醒和反馈</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+          <li><a href="dialog.html"><i class="menu-icon fa fa-caret-right"></i>对话框</a><b class="arrow"></b></li>
+          <li><a href="msgs.html"><i class="menu-icon fa fa-caret-right"></i>提示消息</a><b class="arrow"></b></li>
+          <li><a href="steps.html"><i class="menu-icon fa fa-caret-right"></i>步骤条</a><b class="arrow"></b></li>
+          <li><a href="error-page.html"><i class="menu-icon fa fa-caret-right"></i>页面报错</a><b class="arrow"></b></li>
+        </ul>
+      </li>      
+      <li><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-bar-chart-o"></i><span class="menu-text">图表配色</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+          <li><a href="chart-bar.html"><i class="menu-icon fa fa-caret-right"></i>柱状图</a><b class="arrow"></b></li>
+          <li><a href="chart-line.html"><i class="menu-icon fa fa-caret-right"></i>折线图</a><b class="arrow"></b></li>
+          <li><a href="chart-pie.html"><i class="menu-icon fa fa-caret-right"></i>饼图</a><b class="arrow"></b></li>
+          <li><a href="chart-scatter.html"><i class="menu-icon fa fa-caret-right"></i>散点图</a><b class="arrow"></b></li>
+          <li><a href="chart-gauge.html"><i class="menu-icon fa fa-caret-right"></i>仪表盘</a><b class="arrow"></b></li>
+          <li><a href="chart-funnel.html"><i class="menu-icon fa fa-caret-right"></i>漏斗图</a><b class="arrow"></b></li>
+          <li><a href="chart-radar.html"><i class="menu-icon fa fa-caret-right"></i>雷达图</a><b class="arrow"></b></li>          
+           <li><a href="chart-candlestick.html"><i class="menu-icon fa fa-caret-right"></i>K线图</a><b class="arrow"></b></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropdown-toggle"> <i class="menu-icon fa fa-paper-plane"></i><span class="menu-text">菜单样式</span> <b class="arrow fa fa-angle-down"></b> </a><b class="arrow"></b>
+        <ul class="submenu">
+          <li><a href="nav-list.html" target="_blank"><i class="menu-icon fa fa-caret-right"></i>水平菜单</a><b class="arrow"></b></li>
+          <li><a href="menu-list.html" target="_blank"><i class="menu-icon fa fa-caret-right"></i>垂直菜单</a><b class="arrow"></b></li>
+          <li><a href="breadcrumb.html"><i class="menu-icon fa fa-caret-right"></i>面包屑</a><b class="arrow"></b></li>
+          <li><a href="tab.html"><i class="menu-icon fa fa-caret-right"></i>标签页</a><b class="arrow"></b></li>
+        </ul>
+      </li> 
+    </ul>
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse"> <i class="ace-icon fa fa-bars" data-icon1="ace-icon fa fa-bars" data-icon2="ace-icon fa fa-bars"></i> </div>
+  </div>
+  <div class="main-content">
+     <div class="header">
+      <ul class="user-center">
+        <li class="dropdown-inner"><a href="Javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"> <span class="btn-circle btn-circle-m"> <i class="fa fa-user"></i> </span> <span>某某用户欢迎您！</span> </a>
+          <div class="dropdown-menu account-area">
+            <div class="account-area-header">切换皮肤</div>
+            <div class="account-area-body">
+              <ul class="skin-list" id="style-switcher">
+                <li><a href="#blue"><span class="color-block bg-blue"></span>Blue</a></li>
+                <li><a href="#green"><span class="color-block bg-green"></span>Green</a></li>
+                <li><a href="#orange"><span class="color-block bg-orange"></span>Orange</a></li>
+              </ul>
+            </div>
+            <div class="account-area-footer"><a href=""><i class="fa fa-cog"></i>管理界面</a></div>
+          </div>
+        </li>
+        <li> <a href="Javascript:void(0);"> <span class="btn-circle btn-circle-m"> <i class="fa fa-bell"></i> </span> <span>通知</span> </a> </li>
+        <li> <a href="Javascript:void(0);"> <span class="btn-circle btn-circle-m"> <i class="fa fa-power-off"></i> </span> <span>退出平台</span> </a> </li>
+      </ul>
+    </div>
+     <div class="container"> 
+    	<div class="row">
+    		<div class="col-md-6 p0">
+    		<div class="col-md-12">
+    			<div class="widget">
+            <div class="widget-header">
+              <div class="widget-caption">表格-常规用法</div>
+            </div>
+            <div class="widget-inner">
+              <table class="table-default">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>列一</th>
+                    <th>列二</th>
+                    <th>列三</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                </tbody>
+              </table>
+              <pre class="layui-code" lay-encode="true" lay-title="常规用法结构"><table class="table-default">
+  <thead>
+    <tr>
+      <th>ID </th>
+      <th>列一</th>
+      <th>列二</th>
+      <th>列三</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>col1</td>
+      <td>col2</td>
+      <td>col3</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>col1</td>
+      <td>col2</td>
+      <td>col3</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>col1</td>
+      <td>col2</td>
+      <td>col3</td>
+    </tr>
+  </tbody>
+</table></pre>
+            </div>
+         </div>
+    		</div> 
+    		<div class="col-md-12">
+    			<div class="widget">
+            <div class="widget-header">
+              <div class="widget-caption">表格-头部带背景色</div>
+            </div>
+            <div class="widget-inner">
+              <table class="table-default table-bordered table-headBg">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>列一</th>
+                    <th>列二</th>
+                    <th>列三</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+    		</div>  
+    	</div>
+    	<div class="col-md-6 p0">  
+    		<div class="col-md-12">
+    			<div class="widget">
+            <div class="widget-header">
+              <div class="widget-caption">表格-带边框</div>
+            </div>
+            <div class="widget-inner">
+              <table class="table-default table-bordered">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>列一</th>
+                    <th>列二</th>
+                    <th>列三</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                </tbody>
+              </table>
+              <pre class="layui-code" lay-encode="true" lay-title="结构">&lt;table class="class="table-default table-bordered""&gt;
+（内部结构参见右侧目录“常规用法”）
+&lt;/table&gt;</pre>
+            </div>
+         </div>
+    		</div>
+    		<div class="col-md-12">
+    			<div class="widget">
+            <div class="widget-header">
+              <div class="widget-caption">表格-隔行换色</div>
+            </div>
+            <div class="widget-inner">
+    					<table class="table-default table-striped">
+                <thead>
+                  <tr>
+                    <th>ID </th>
+                    <th>列一</th>
+                    <th>列二</th>
+                    <th>列三</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                  </tr>
+                </tbody>
+              </table>
+              <pre class="layui-code" lay-encode="true" lay-title="结构">&lt;table class="table-default table-striped"&gt;
+（内部结构参见右侧目录“常规用法”）
+&lt;/table&gt;</pre>
+    			</div>
+    		</div>
+    		</div>  
+    		<div class="col-md-12">
+    			<div class="widget">
+            <div class="widget-header">
+              <div class="widget-caption">表格-全选反选</div>
+            </div>
+            <div class="widget-inner">
+            	<div class="msg msg-mini msg-warning">①.引入JS插件 tableCheckbox.js  ②.调用tableCheck $selecter.tableCheck() </div>
+				 <table class="table-default table-bordered table-striped" id="myTable">
+				    <thead>
+				    <th style="width:20px;"><input type="checkbox"></th>
+				      <th>编程语言</th>					      
+				      <th>列一</th>
+                <th>列二</th>
+                <th>列三</th>
+                <th>列四</th>
+				        </thead>
+				    <tbody>
+				      <tr>
+				        <td><input type="checkbox"></td>
+				        <td>C</td>
+                <td>col1</td>
+                <td>col2</td>
+                <td>col3</td>
+                <td>col4</td>
+				      </tr>
+				      <tr>
+				        <td><input type="checkbox"></td>
+				        <td>Java</td>
+                <td>col1</td>
+                <td>col2</td>
+                <td>col3</td>
+                <td>col4</td>
+				      </tr>
+				      <tr>
+				        <td><input type="checkbox"></td>
+				        <td>PHP</td>
+                <td>col1</td>
+                <td>col2</td>
+                <td>col3</td>
+                <td>col4</td>
+				      </tr>
+				      <tr>
+				        <td><input type="checkbox"></td>
+				        <td>JavaScript</td>
+                <td>col1</td>
+                <td>col2</td>
+                <td>col3</td>
+                <td>col4</td>
+				      </tr>
+				      <tr>
+				        <td><input type="checkbox"></td>
+				        <td>C++</td>
+                <td>col1</td>
+                <td>col2</td>
+                <td>col3</td>
+                <td>col4</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  <pre class="layui-code" lay-encode="true" lay-title="结构">&lt;table  class="table-default table-bordered table-striped" id="myTable"&gt;
+（内部结构参见右侧目录“常规用法”）
+&lt;/table&gt;
+//.tableCheck("info") 默认是active灰色，根据需求可以修改选中颜色success,warning,danger,info,active 
+$("#myTable").tableCheck("info"); 
+$(".fixed-table-box").fixedTable();</pre>
+    			</div>
+    		</div>
+    		</div> 
+    	</div>
+    	</div>      
+    	<div class="row">
+    		<div class="col-xx-12">
+    			<div class="widget">
+    				<div class="widget-header">
+              <div class="widget-caption">表格-头部和两遍固定</div>
+            </div>
+            <div class="widget-inner">
+            	<div class="msg msg-mini msg-warning">
+            		①.引入JS插件 "layui.js" 和 "fixed-table.js"
+            		②.调用$(".fixed-table-box").fixedTable();
+            	</div>
+            		<div class="fixed-table-box row-col-fixed">
+					        <!-- 表头 start -->
+					        <div class="fixed-table_header-wraper">
+					            <table class="fixed-table_header">
+					                <thead>
+					                    <tr>
+					                        <th class="w-200" data-fixed="true"><div class="table-cell">日期</div></th>
+					                        <th class="w-200"><div class="table-cell">姓名</div></th>
+					                        <th class="w-200"><div class="table-cell">省份</div></th>
+					                        <th class="w-200"><div class="table-cell">市区</div></th>
+					                        <th class="w-200"><div class="table-cell">姓名</div></th>
+					                        <th class="w-200"><div class="table-cell">省份</div></th>
+					                        <th class="w-200"><div class="table-cell">市区</div></th>
+					                        <th class="w-200"><div class="table-cell">地址</div></th>
+					                        <th class="w-200"><div class="table-cell">邮编</div></th>
+					                        <th class="w-100" data-fixed="true" data-direction="right"><div class="table-cell">操作</div></th>
+					                    </tr>
+					                </thead>
+					            </table>
+					        </div>
+					        <!-- 表头 end -->
+					        <!-- 表格内容 start -->
+					        <div class="fixed-table_body-wraper">
+					            <table class="fixed-table_body">
+					                <tbody>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-01</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>                    
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-02</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-03</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-04</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-05</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-06</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-07</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                    <tr>
+					                        <td class="w-200"><div class="table-cell"> 2016-05-08</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">name</div></td>
+					                        <td class="w-200"><div class="table-cell">上海</div></td>
+					                        <td class="w-200"><div class="table-cell">普陀区</div></td>
+					                        <td class="w-200"><div class="table-cell">address</div></td>
+					                        <td class="w-200"><div class="table-cell">200333</div></td>
+					                        <td class="w-100">
+					                            <div class="table-cell">
+					                                <a href="###">查看</a>
+					                                <a href="###">编辑</a>
+					                            </div>
+					                        </td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					        </div>
+					        <!-- 表格内容 end -->
+					
+					        <!-- 固定列 start -->
+					        <div class="fixed-table_fixed fixed-table_fixed-left">
+					            <div class="fixed-table_header-wraper">
+					                <table class="fixed-table_header">
+					                    <thead>
+					                        <tr>
+					                            <th class="w-200"><div class="table-cell">日期</div></th>
+					                        </tr>
+					                    </thead>
+					                </table>
+					            </div>
+					            
+					            <div class="fixed-table_body-wraper">
+					                <table class="fixed-table_body">
+					                    <tbody>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-01</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-02</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-03</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-04</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-05</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-06</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-07</div></td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-200"><div class="table-cell"> 2016-05-08</div></td>
+					                        </tr>
+					                    </tbody>
+					                </table>
+					            </div>
+					        </div>
+					        <div class="fixed-table_fixed fixed-table_fixed-right">
+					            <div class="fixed-table_header-wraper">
+					                <table class="fixed-table_header">
+					                    <thead>
+					                        <tr>
+					                            <th class="w-100"><div class="table-cell">操作</div></th>
+					                        </tr>
+					                    </thead>
+					                </table>
+					            </div>					            
+					            <div class="fixed-table_body-wraper">
+					                <table class="fixed-table_body">
+					                    <tbody>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                        <tr>
+					                            <td class="w-100">
+					                                <div class="table-cell">
+					                                    <a href="###">查看</a>
+					                                    <a href="###">编辑</a>
+					                                </div>
+					                            </td>
+					                        </tr>
+					                    </tbody>
+					                </table>
+					            </div>
+					        </div>
+					        <!-- 固定列 end -->
+					    </div>
+					    <pre class="layui-code" lay-encode="true" lay-title="结构"><!--
+<div class="fixed-table-box row-col-fixed">
+  <div class="fixed-table_header-wraper">
+    <table class="fixed-table_header">头部内容</table>
+  </div>
+  <div class="fixed-table_body-wraper">
+    <table class="fixed-table_body">中间部分</table>
+  </div>
+  <div class="fixed-table_fixed fixed-table_fixed-left">
+    <div class="fixed-table_header-wraper">
+      <table class="fixed-table_header">左侧头部内容</table>
+    </div>
+    <div class="fixed-table_body-wraper">
+      <table class="fixed-table_body">左侧中间内容</table>
+    </div>
+  </div>
+  <div class="fixed-table_fixed fixed-table_fixed-right">
+    <div class="fixed-table_header-wraper">
+      <table class="fixed-table_header">右侧头部内容</table>
+    </div>
+    <div class="fixed-table_body-wraper">
+      <table class="fixed-table_body">右侧中间内容</table>
+    </div>
+  </div>
+</div>
+--></pre>
+            </div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-xx-12">
+    			<div class="widget">
+    				<div class="widget-header"><div class="widget-caption">表格-动态分页</div></div>
+    				<div class="widget-inner">
+    					<table class="table-default table-bordered  table-sort" id="article">
+					      <thead>
+					        <tr>
+					          <th>选择</th>
+					          <th>ID</th>
+					          <th>name</th>
+					          <th>文章类别</th>
+					          <th>文章名称</th>
+					          <th>文章内容</th>
+					          <th>发布时间</th>
+					          <th>状态</th>
+					          <th>操作</th>
+					        </tr>
+					      </thead>
+					      <tbody>
+					      </tbody>
+					    </table>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+     </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script> 
+<script type="text/javascript" src="js/bootstrap.2.0.js"></script> 
+<script type="text/javascript" src="js/project.js"></script> 
+<script type="text/javascript" src="plugins/layui/layui.js"></script> 
+<script type="text/javascript" src="plugins/table/tableCheckbox.js" ></script>
+<script type="text/javascript" src="plugins/table/fixed-table.js" ></script>
+<script>
+layui.use(['code'], function(){
+  var element = layui.element; 
+  layui.code();
+});
+</script>
+
+ <script>
+ 	//给选中行增加样式
+  $("#myTable").tableCheck("info"); //success,warning,danger,info,active
+  //初始化FixedTable
+  $(".fixed-table-box").fixedTable();
+</script>
+<script>
+  layui.config({
+    base: 'plugins/datatable/' //自定义layui组件的目录
+  }).extend({ //设定组件别名
+    datatable: 'datatable',
+  });
+  layui.use(['jquery', 'datatable'], function() {
+    var $ = layui.jquery;
+    $(function() {
+      /**
+       * 渲染数据
+       */
+      var lang = {
+        "sProcessing": "处理中...",
+        "sLengthMenu": "每页 _MENU_ 项",
+        "sZeroRecords": "没有匹配结果",
+        "sInfo": "当前显示第 _START_ 至 _END_ 项，共 _TOTAL_ 项。",
+        "sInfoEmpty": "当前显示第 0 至 0 项，共 0 项",
+        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+        "sInfoPostFix": "",
+        "sSearch": "本地搜索：",
+        "sUrl": "",
+        "sEmptyTable": "暂无数据",
+        "sLoadingRecords": "载入中...",
+        "sInfoThousands": ",",
+        "oPaginate": {
+          "sFirst": "首页",
+          "sPrevious": "上页",
+          "sNext": "下页",
+          "sLast": "末页",
+          "sJump": "跳转"
+        },
+        "oAria": {
+          "sSortAscending": ": 以升序排列此列",
+          "sSortDescending": ": 以降序排列此列"
+        }
+      };
+      $('#article').dataTable({
+        "language": lang, //提示信息
+        "autoWidth": false, //自适应宽度，
+        "lengthMenu": [5, 10, 20],
+        "stripeClasses": ["odd", "even"], //为奇偶行加上样式，兼容不支持CSS伪类的场合
+        "searching": true, //是否允许Datatables开启本地搜索
+        "paging": true, //是否开启本地分页
+        "lengthChange": true, //是否允许产品改变表格每页显示的记录数
+        "info": true, //控制是否显示表格左下角的信息
+        //跟数组下标一样，第一列从0开始，这里表格初始化时，第四列默认降序
+        "order": [1, 'desc'], //asc升序   desc降序 
+        "aoColumnDefs": [{
+          "orderable": false,
+          "aTargets": [0, 4, 7,8] // 指定列不参与排序
+        }],
+        "deferRender": true, //延迟渲染
+        "ajax": "plugins/datatable/article.json", //数据的路径
+        "columns": [{ //定义列
+          "data": function(obj) {
+            return '<input type="checkbox" name="article-list" data-id=' + obj.id + '>';
+          }
+        }, {
+          "data": "id"
+        }, {
+          "data": "name"
+        }, {
+          "data": "articleSorts"
+        }, {
+          "data": "articleTitle"
+        }, {
+          "data": "articleContents",
+          "className": "oneline"
+        }, {
+          "data": function(obj) {
+            return replaceTime(obj.releaseTime / 1000);
+          }
+        }, {
+          "data": function(obj) {
+            if(obj.releaseStatus) {
+              return '<span class="label label-success">正常发布</span>';
+            } else {
+              return '<span class="label label-default">暂停发布</span>';
+            }
+          },
+          "className": "td-status"
+        }, {
+          "data": function(obj) {
+            if(obj.releaseStatus) {
+              return '<span title="暂停发布" class="handle-btn handle-btn-stop"><i class="linyer icon-zanting"></i></span><span title="编辑" class="handle-btn handle-btn-edit"><i class="linyer icon-edit"></i></span><span title="删除" class="handle-btn handle-btn-delect"><i class="linyer icon-delect"></i></span>';
+            } else {
+              return '<span title="正常发布" class="handle-btn handle-btn-run"><i class="linyer icon-qiyong"></i></span><span title="编辑" class="handle-btn handle-btn-edit"><i class="linyer icon-edit"></i></span><span title="删除" class="handle-btn handle-btn-delect"><i class="linyer icon-delect"></i></span>';
+            }
+          },
+          "className": "td-handle"
+        }]
+      });
+    });
+  })
+
+  function replaceTime(nS) {
+    return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+  }
+</script>
+
+</body>
+</html>

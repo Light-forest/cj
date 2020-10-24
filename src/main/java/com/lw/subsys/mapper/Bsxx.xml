@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.BsxxMapper">
+	<insert id="add" parameterType="Bsxx" >
+		insert into bsxx ( bsid,bsbh,bsqh,bsjs,zgrs,bmrs,bsnd,bsyf,kssj,jssj,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09,bz10,bz11,bz12,bz13,bz14,bz15,bz16,bz17,bz18,bz19 ) values (#{bsid},#{bsbh},#{bsqh},#{bsjs},#{zgrs},#{bmrs},#{bsnd},#{bsyf},#{kssj},#{jssj},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09},#{bz10},#{bz11},#{bz12},#{bz13},#{bz14},#{bz15},#{bz16},#{bz17},#{bz18},#{bz19})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from bsxx where bsid= #{bsid}
+	</delete>
+	<update id="update" parameterType="Bsxx" >
+		update bsxx set bsid=#{bsid},bsbh=#{bsbh},bsqh=#{bsqh},bsjs=#{bsjs},zgrs=#{zgrs},bmrs=#{bmrs},bsnd=#{bsnd},bsyf=#{bsyf},kssj=#{kssj},jssj=#{jssj},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09},bz10=#{bz10},bz11=#{bz11},bz12=#{bz12},bz13=#{bz13},bz14=#{bz14},bz15=#{bz15},bz16=#{bz16},bz17=#{bz17},bz18=#{bz18},bz19=#{bz19} where bsid=#{bsid}
+	</update>
+
+	<select id="list" resultType="Bsxx" >
+		select * from  bsxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from bsxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Bsxx">
+		select * from   bsxx  where bsid= #{bsid}
+	</select>
+</mapper>

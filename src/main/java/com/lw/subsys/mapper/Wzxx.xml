@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.WzxxMapper">
+	<insert id="add" parameterType="Wzxx" >
+		insert into wzxx ( wzid,wzbh,wzxh,zwbt,ywbt,btys,wztp,zwzy,ywzy,wzlx,zwnr,ywnr,wzbq,gjcy,fbsj,wzzz,wzly,bjsj,wzzt,lmid,lmmc,fyfs,fydx,sftt,sftj,zdjb,sfgd,plsl,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09 ) values (#{wzid},#{wzbh},#{wzxh},#{zwbt},#{ywbt},#{btys},#{wztp},#{zwzy},#{ywzy},#{wzlx},#{zwnr},#{ywnr},#{wzbq},#{gjcy},#{fbsj},#{wzzz},#{wzly},#{bjsj},#{wzzt},#{lmid},#{lmmc},#{fyfs},#{fydx},#{sftt},#{sftj},#{zdjb},#{sfgd},#{plsl},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from wzxx where wzid= #{wzid}
+	</delete>
+	<update id="update" parameterType="Wzxx" >
+		update wzxx set wzid=#{wzid},wzbh=#{wzbh},wzxh=#{wzxh},zwbt=#{zwbt},ywbt=#{ywbt},btys=#{btys},wztp=#{wztp},zwzy=#{zwzy},ywzy=#{ywzy},wzlx=#{wzlx},zwnr=#{zwnr},ywnr=#{ywnr},wzbq=#{wzbq},gjcy=#{gjcy},fbsj=#{fbsj},wzzz=#{wzzz},wzly=#{wzly},bjsj=#{bjsj},wzzt=#{wzzt},lmid=#{lmid},lmmc=#{lmmc},fyfs=#{fyfs},fydx=#{fydx},sftt=#{sftt},sftj=#{sftj},zdjb=#{zdjb},sfgd=#{sfgd},plsl=#{plsl},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09} where wzid=#{wzid}
+	</update>
+
+	<select id="list" resultType="Wzxx" >
+		select * from  wzxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from wzxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Wzxx">
+		select * from   wzxx  where wzid= #{wzid}
+	</select>
+</mapper>

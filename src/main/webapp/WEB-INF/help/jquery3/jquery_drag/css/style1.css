@@ -1,0 +1,26 @@
+/*
+                                __      _ _                   _   
+                               / _|    | (_)                 | |  
+ _ __ ___   __ _ _ __ ___ ___ | |_ ___ | |_  ___   _ __   ___| |_ 
+| '_ ` _ \ / _` | '__/ __/ _ \|  _/ _ \| | |/ _ \ | '_ \ / _ \ __|
+| | | | | | (_| | | | (_| (_) | || (_) | | | (_) || | | |  __/ |_ 
+|_| |_| |_|\__,_|_|  \___\___/|_| \___/|_|_|\___(_)_| |_|\___|\__|
+<!--
+   ┏━━━━━━━━━━━━━━━━━━━━━┓
+   ┃             源 码 爱 好 者               ┃
+   ┣━━━━━━━━━━━━━━━━━━━━━┫
+   ┃                                          ┃
+   ┃           提供源码发布与下载             ┃
+   ┃                                          ┃
+   ┃        http://www.codefans.net           ┃
+   ┃                                          ┃
+   ┃            互助、分享、提高              ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━┛
+-->
+                                                                  
+*/
+body, div, img, p { padding:0; margin:0; }
+body { overflow:hidden;}
+.polaroid { width:600px; height:400px;position:absolute; }
+.polaroid img { width:600px; height:400px; margin:0px 0 0 0px; }
+.polaroid p { text-align:center; font-family:Georgia,serif; font-size:20px; color:#2E2E2E; margin-top:15px; }

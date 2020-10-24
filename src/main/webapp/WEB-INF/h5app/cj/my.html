@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>报名参赛</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content=""> 
+    
+    <!-- begin jqueryWeUI 头部CSS配置-->
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css"> 
+    <!--end jqueryWeUI 头部CSS配置-->
+
+    <link rel="stylesheet" href="../jdavid/a.view.css"> 
+    
+
+    <style>
+
+    </style>
+
+  </head> 
+  <body ontouchstart>  
+    <!-- begin 页头-->
+    <header class='demos-header-lw'>
+        <div class="weui-flex">
+            <div><a href="#" class="placeholder-lw"></a></div>
+            <div class="weui-flex__item">
+                <div class="placeholder-lw">报名参赛</div>
+            </div> 
+            <div><div class="placeholder-lw"></div></div>
+        </div> 
+    </header>
+    <!-- end 页头-->
+	
+	
+             
+    <div class="weui-cells weui-cells_form">
+ 
+
+        <!-- ====================================== -->
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="sjhm" class="weui-label">*手机号码</label></div>
+            <div class="weui-cell__bd"><input id="sjhm" class="weui-input" type="text" value="" placeholder="输入手机号查询"></div>
+            <a href="javascript:btn_query_click();" class="weui-btn weui-btn_mini  weui-btn_warn" id="mobile" >
+                查看</a>
+        </div>
+   
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="yxjsm" class="weui-label">*游戏角色名</label></div>
+            <div class="weui-cell__bd"><input id="yxjsm" class="weui-input" type="text" value="" placeholder="请输入游戏角色名"></div>
+        </div>
+
+
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="sfzxm" class="weui-label">*身份证姓名</label></div>
+            <div class="weui-cell__bd"><input id="sfzxm" class="weui-input" type="text" value="" placeholder="请输入身份证姓名"></div>
+        </div>
+		       <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="sfzhm" class="weui-label">*身份证号码</label></div>
+            <div class="weui-cell__bd"><input id="sfzhm" class="weui-input" type="text" value="" placeholder="请输入身份证号码"></div>
+        </div>
+		
+       <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="brwxh" class="weui-label">*微信号</label></div>
+            <div class="weui-cell__bd"><input id="brwxh" class="weui-input" type="text" value="" placeholder="方便赛事组通知相关信息"></div>
+        </div>
+		
+       <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="wdddh" class="weui-label">*微店订单号</label></div>
+            <div class="weui-cell__bd"><input id="wdddh" class="weui-input" type="text" value="" placeholder="请输入微店订单号"></div>
+        </div>
+		  
+		
+		
+		 <a href="javascript:void(0);" class="weui-cell weui-cell_link">
+                <div class="weui-cell__bd">身份证照片</div>
+        </a>
+        <div class="weui-cell">
+
+             <iframe src="" id="id_iframe_upload_file_zp" style="width: 100%;height:200px;" frameborder="0"></iframe>
+
+
+        </div>
+
+    </div>
+
+    <div class="weui-btn-area" style="text-align:center;display:none;"> 
+         <a class="weui-btn  weui-btn_warn" href="javascript:;" id="btnReg">确定报名</a>
+    </div>
+
+	<div class='demos-content-padded'>
+      <a href="javascript:btn_ok_click();" class="weui-btn weui-btn_warn"  >更新报名信息</a>
+    </div>
+	
+	
+    <!-- begin 底部tabbar-->
+    <div class="weui-tabbar weui-tabbar-lw">
+        <a href="home.html" class="weui-tabbar__item" id="aDown1">
+            <!--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+            -->
+            <div class="weui-tabbar__icon">
+                <img src="./images/i1.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">馋猫赛事</p>
+        </a>
+        <a href="xxlist.html" class="weui-tabbar__item"  id="aDown2">
+            <div class="weui-tabbar__icon">
+                <img src="./images/i2.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">报名参赛</p>
+        </a>
+        <a href="xxlist.html" class="weui-tabbar__item" id="aDown3">
+            <div class="weui-tabbar__icon">
+                <img src="./images/i3.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">微店</p>
+        </a>
+        <a href="my.html" class="weui-tabbar__item  weui-bar__item--on" id="aDown4">
+            <div class="weui-tabbar__icon">
+                <img src="./images/i4.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">我</p>
+        </a>
+
+    </div>
+    <!-- end 底部tabbar-->
+	
+	
+	 <div id="full" class='weui-popup__container' style="margin-left:5%;margin-top:10%;width:90%;margin-right:5%;margin-bottom:10%; height:80%;">
+      <div class="weui-popup__overlay"></div>
+      <div class="weui-popup__modal">
+        <header class='demos-header'>
+          <h2 class="demos-second-title">馋猫吃鸡参赛宣言</h2>
+          <p class="demos-sub-title">By 吃鸡王 @2018/03/30</p>
+        </header>
+        <article class="weui-article">
+          <h1>参赛须知</h1>
+          <section>
+            
+            <section>
+              
+              <p>
+                     在您决定成为““XX”以及”XX”旗下游戏”正式用户前，您必须阅读和同意本用户条款。 您必须在完全同意以下条款及其附加其他服务条款和管理制度的前提下，才能完成注册程序，成为”XX”以及”XX”旗下游戏用户后，才能使用我们所提供的服务。 
+			  </p>
+			  <p>
+				您一旦点击“同意”按钮并注册成为”XX”以及”XX”旗下游戏的用户，表示您已经同意以下及后面的附加服务条款和管理制度。  本条款的修改权和解释权归深圳市XX电脑技术有限公司所有。  1、服务内容  			  </p>
+			  <p>
+1.1 服务名称及内容：”XX”以及”XX”旗下游戏及深圳市XX电脑技术有限公司（以下简称XX） 提供的与”XX”以及”XX”旗下游戏配套的网站服务，包括论坛、资讯等服务。  			  </p>
+			  <p>
+1.2 服务提供方：XX 1.3 服务条款的确认与接纳：  XX同意按照本协议的规定及其不时发布的规则提供本协议规定的服务，为获得本服务，服务使用人(以下称“用户”)同意本协议的全部条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款，遵守以该注册用户名能够享受到的所有服务的条款及管理规则。  用户在使用XX提供的各项服务之前，应仔细阅读本服务协议，特别是免除或者限制XX责任的免责条款及对用户的权利限制。如用户不同意本服务协议或随时对其的修改，请停止使用XX提供的服务。  			  </p>
+			  <p>
+1.4 提示：XX仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如电脑、调制解调器及其他与接入互联网有关的设备)及所需的费用(如为接入互联网而支付的电话费及上网费)均应由用户自行负担。  2、用户规则  2.1 用户注册规则  2.1.1 用户须承诺在申请用户名时遵循如下规定：  （1）用户名的注册及使用须遵守网络道德，遵守中华人民共和国的有关法律法规；  （2）用户名中不得含有任何威胁、恐吓、漫骂、庸俗、亵渎、色情、淫秽、非法、反动、前后矛盾、攻击性、伤害性、骚扰性、诽谤性、辱骂性的或侵害他人知识产权的文字。不得涉及政治、国家领导人或宗教领导人，以及任何可能引起法律纠纷的文字。  2.1.2 用户可以申请新的用户名，但不可以要求删除旧的用户名。  			  </p>
+			  <p>
+2.1.3 XX根据需要，有权随时对含有相关词语的用户名予以保留注册。对已注册成功的用户，若含有XX禁止或保留注册词语的，XX亦保留强制更名或删除用户名的权利。  2.1.4 XX仅面对个人用户，任何单位或其它组织均不允许注册成为”XX”以及”XX”旗下游戏用户。			  </p>
+			  <p>
+ 2.2 用户密码管理规则  2.2.1 用户必须保管好自己的用户名和密码，谨防被盗或泄露。因密码被盗或泄露造成的全部责任和损失均由用户本人承担，XX概不负责。  2.2.2 用户因忘记密码或密码被盗向XX提出修改密码请求时，必须提供完全正确的身份信息，否则XX有权本着为用户保密的原则不予告知。
+              </p> 
+              </p>
+            </section>
+             
+          </section>
+        </article>
+        <a href="javascript:btn_ok_click();" class="weui-btn weui-btn_primary close-popup" style="margin:20px;"
+
+        >接受宣言，提交报名</a>
+      </div>
+    </div>
+
+	
+	
+	
+    <!-- begin jqueryWeUI 底部js配置-->
+    <script src="../lib/jquery-2.1.4.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script src="../js/jquery-weui.min.js"></script>
+    <!-- end jqueryWeUI 底部js配置-->
+
+    <script src="../jdavid/c.check.js"></script>
+    <script src="../jdavid/e.util.js"></script>
+    <script src="../jdavid/f.request.js"></script>
+    <script src="../jdavid/z.proj.js"></script>
+       
+    <script src="my.js"></script>
+    <script>
+    </script>
+
+  </body>
+</html>

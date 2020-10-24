@@ -1,0 +1,998 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Column stretching - Handsontable</title>
+<html>
+    <head>
+        <title>FixedHeaderTable Test</title>
+        <link href="css/960.css" rel="stylesheet" media="screen" />
+        <link href="css/defaultTheme.css" rel="stylesheet" media="screen" />
+        <link href="css/myTheme.css" rel="stylesheet" media="screen" />
+        <script src="http://www.jq22.com/jquery/1.7.2/jquery.min.js"></script>
+
+        <script src="js/jquery.fixedheadertable.js"></script>
+        <script src="js/demo.js"></script>
+    </head>
+    <body>
+    	<div class="container_12">
+    		<div class="grid_4">
+    			<pre>
+    				<code>1</code>
+    			</pre>
+    		</div>
+    		<div class="grid_12 height250" >
+    			<table class="fancyTable" id="myTable01" cellpadding="0" cellspacing="0">
+    			    <thead>
+        		        <tr>
+        		            <th>序号</th>
+        		            <th>行政区r</th>
+        		            <th>预约诊疗人次</th>
+        		            <th>诊疗总人次</th>
+        		            <th>预约诊疗率（%）</th>
+        		            <th>复诊预约人次</th>
+        		        </tr>
+    			    </thead>
+    			    <tbody>
+    			        <tr>
+    			            <td>1</td>
+    			            <td>闵行区</td>
+    			            <td>13444</td>
+    			            <td>424</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>2</td>
+    			            <td>静安区</td>
+    			            <td>23523</td>
+    			            <td>7266</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>3</td>
+    			            <td>嘉定区</td>
+    			            <td>68756</td>
+    			            <td>2542</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>4</td>
+    			            <td>浦东区</td>
+    			            <td>45468</td>
+    			            <td>8747</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>5</td>
+    			            <td>松江区</td>
+    			            <td>7547</td>
+    			            <td>966</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>6</td>
+    			            <td>徐汇区</td>
+    			            <td>23968</td>
+    			            <td>6555</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>7</td>
+    			            <td>长宁区</td>
+    			            <td>12358</td>
+    			            <td>6788</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>8</td>
+    			            <td>闸北区</td>
+    			            <td>23545</td>
+    			            <td>566</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>9</td>
+    			            <td>嘉定区</td>
+    			            <td>4557</td>
+    			            <td>877</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>10</td>
+    			            <td>普陀区</td>
+    			            <td>48686</td>
+    			            <td>5456</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>11</td>
+    			            <td>宝山区</td>
+    			            <td>3563</td>
+    			            <td>7868</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>12</td>
+    			            <td>杨浦区</td>
+    			            <td>3635</td>
+    			            <td>457</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>13</td>
+    			            <td>黄埔区</td>
+    			            <td>25333</td>
+    			            <td>4557</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>14</td>
+    			            <td>奉贤区</td>
+    			            <td>5758</td>
+    			            <td>865</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>15</td>
+    			            <td>虹口区</td>
+    			            <td>7857</td>
+    			            <td>478</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>16</td>
+    			            <td>青浦区</td>
+    			            <td>20563</td>
+    			            <td>5689</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			    </tbody>
+    			</table>
+    		</div>
+    		<div class="clear"></div>
+    	</div>
+        
+        <div class="container_12 divider">
+        	<div class="grid_4">
+        		<pre>
+        		 <code>2</code>
+        		</pre>
+        	</div>
+        	<div class="grid_12 height250">
+        		<table class="fancyTable" id="myTable02" cellpadding="0" cellspacing="0">
+        		    <thead>
+        		        <tr>
+        		            <th>序号</th>
+        		            <th>行政区r</th>
+        		            <th>预约诊疗人次</th>
+        		            <th>诊疗总人次</th>
+        		            <th>预约诊疗率（%）</th>
+        		            <th>复诊预约人次</th>
+        		        </tr>
+        		    </thead>
+        		    <tfoot>
+        		        <tr>
+        		            <td>底部序列号</td>
+        		            <td>1</td>
+        		            <td>2</td>
+        		            <td>3</td>
+        		            <td>4</td>
+        		            <td>5</td>
+        		        </tr>
+        		    </tfoot>
+ <tbody>
+    			        <tr>
+    			            <td>1</td>
+    			            <td>闵行区</td>
+    			            <td>13444</td>
+    			            <td>424</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>2</td>
+    			            <td>静安区</td>
+    			            <td>23523</td>
+    			            <td>7266</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>3</td>
+    			            <td>嘉定区</td>
+    			            <td>68756</td>
+    			            <td>2542</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>4</td>
+    			            <td>浦东区</td>
+    			            <td>45468</td>
+    			            <td>8747</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>5</td>
+    			            <td>松江区</td>
+    			            <td>7547</td>
+    			            <td>966</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>6</td>
+    			            <td>徐汇区</td>
+    			            <td>23968</td>
+    			            <td>6555</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>7</td>
+    			            <td>长宁区</td>
+    			            <td>12358</td>
+    			            <td>6788</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>8</td>
+    			            <td>闸北区</td>
+    			            <td>23545</td>
+    			            <td>566</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>9</td>
+    			            <td>嘉定区</td>
+    			            <td>4557</td>
+    			            <td>877</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>10</td>
+    			            <td>普陀区</td>
+    			            <td>48686</td>
+    			            <td>5456</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>11</td>
+    			            <td>宝山区</td>
+    			            <td>3563</td>
+    			            <td>7868</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>12</td>
+    			            <td>杨浦区</td>
+    			            <td>3635</td>
+    			            <td>457</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>13</td>
+    			            <td>黄埔区</td>
+    			            <td>25333</td>
+    			            <td>4557</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>14</td>
+    			            <td>奉贤区</td>
+    			            <td>5758</td>
+    			            <td>865</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>15</td>
+    			            <td>虹口区</td>
+    			            <td>7857</td>
+    			            <td>478</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			        <tr>
+    			            <td>16</td>
+    			            <td>青浦区</td>
+    			            <td>20563</td>
+    			            <td>5689</td>
+    			            <td>70.00%</td>
+    			            <td>32.61%</td>
+    			        </tr>
+    			    </tbody>
+                  </table>
+        	</div>
+        	<div class="clear"></div>
+        </div>
+        
+        <div class="container_12 divider">
+        	<div class="grid_4">
+        		<pre>
+        			<code>3</code>
+        		</pre>
+        	</div>
+        	<div class="grid_12 height400">
+        		<table class="fancyTable" id="myTable05" cellpadding="0" cellspacing="0">
+        		    <thead>
+        		        <tr>
+        		            <th>序号</th>
+        		            <th>行政区r</th>
+        		            <th>预约诊疗人次</th>
+        		            <th>诊疗总人次</th>
+        		            <th>预约诊疗率（%）</th>
+        		            <th>复诊预约人次</th>
+        		            <th>完成率</th>
+        		            <th>偏差率</th>
+        		            <th>操作</th>
+                            <th>编辑</th>
+                            <th>查看</th>
+        		        </tr>
+        		    </thead>
+        		    <tbody>
+        		        <tr>
+        		            <td>1</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>2</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22 test test test</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>3</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00% test test test</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>4</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>5</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>6</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>7</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>8</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>9</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>10</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>11</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>12</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>13</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>14</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>15</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>16</td>
+        		            <td class="numeric">1,990</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+                            <td class="numeric">32.61%</td>
+        		        </tr>
+        		    </tbody>
+        		</table>
+        	</div>
+        	<div class="clear"></div>
+        </div>
+        
+        <div class="container_12 divider">
+        	<div class="grid_4">
+        		<pre>
+        			<code>4</code>
+        		</pre>
+        	</div>
+        	<div class="grid_12 height400">
+        		<table class="fancyTable" id="myTable03" cellpadding="0" cellspacing="0">
+        		    <thead>
+        		        <tr>
+        		            <th>序号</th>
+        		            <th>行政区r</th>
+        		            <th>预约诊疗人次</th>
+        		            <th>诊疗总人次</th>
+        		            <th>预约诊疗率（%）</th>
+        		            <th>复诊预约人次</th>
+        		            <th>完成率</th>
+        		            <th>偏差率</th>
+        		            <th>操作</th>
+        		        </tr>
+        		    </thead>
+        		    <tfoot>
+        		        <tr>
+        		            <td colspan="9"><a class="button pagination" href="#">上一页</a><a class="button pagination" href="#">下一页</a></td>
+        		        </tr>
+        		    </tfoot>
+        		    <tbody>
+        		        <tr>
+        		            <td>1</td>
+        		            <td class="numeric">浦东新区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>2</td>
+        		            <td class="numeric">黄浦区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22 test test test</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>3</td>
+        		            <td class="numeric">虹口区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00% test test test</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>4</td>
+        		            <td class="numeric">杨浦区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>5</td>
+        		            <td class="numeric">静安区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>6</td>
+        		            <td class="numeric">长宁区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>7</td>
+        		            <td class="numeric">徐汇区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>8</td>
+        		            <td class="numeric">普陀区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>9</td>
+        		            <td class="numeric">宝山区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>10</td>
+        		            <td class="numeric">闵行区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>11</td>
+        		            <td class="numeric">青浦区</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>12</td>
+        		            <td class="numeric">嘉定区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>13</td>
+        		            <td class="numeric">松江区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>14</td>
+        		            <td class="numeric">奉贤区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>15</td>
+        		            <td class="numeric">金山区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>16</td>
+        		            <td class="numeric">崇明区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            
+        		        </tr>
+        		        <tr>
+        		            <td>16</td>
+        		            <td class="numeric">崇明区</td>
+        		            <td class="numeric">3.11</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+                            
+        		        </tr>
+                       </tbody>
+
+        		</table>
+        	</div>
+        	<div class="clear"></div>
+        </div>
+        
+		<div class="container_12 divider">
+        	<div class="grid_4">
+        		<pre>
+        			<code>5</code>
+        		</pre>
+        	</div>
+        	<div class="grid_12 height400">
+        		<table class="fancyTable" id="myTable04" cellpadding="0" cellspacing="0">
+        		    <thead>
+        		        <tr>
+        		            <th>序号</th>
+        		            <th>行政区r</th>
+        		            <th>预约诊疗人次</th>
+        		            <th>诊疗总人次</th>
+        		            <th>预约诊疗率（%）</th>
+        		            <th>复诊预约人次</th>
+        		            <th>完成率</th>
+        		            <th>偏差率</th>
+        		            <th>操作</th>
+        		        </tr>
+        		    </thead>
+        		    <tbody>
+        		        <tr>
+        		            <td>1</td>
+        		            <td class="numeric">浦东新区</td>
+        		            <td class="numeric">34534</td>
+        		            <td class="numeric">352</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">4.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>2</td>
+        		            <td class="numeric">黄浦区</td>
+        		            <td class="numeric">63637</td>
+        		            <td class="numeric">745</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">5.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>3</td>
+        		            <td class="numeric">虹口区</td>
+        		            <td class="numeric">584656</td>
+        		            <td class="numeric">556</td>
+        		            <td class="numeric">70.00% test test test</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">3.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>4</td>
+        		            <td class="numeric">杨浦区</td>
+        		            <td class="numeric">563676</td>
+        		            <td class="numeric">6565</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">5.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>5</td>
+        		            <td class="numeric">静安区</td>
+        		            <td class="numeric">65656</td>
+        		            <td class="numeric">762</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">5.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>6</td>
+        		            <td class="numeric">长宁区</td>
+        		            <td class="numeric">65345</td>
+        		            <td class="numeric">565</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">4.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>7</td>
+        		            <td class="numeric">徐汇区</td>
+        		            <td class="numeric">5345</td>
+        		            <td class="numeric">554</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">7.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>8</td>
+        		            <td class="numeric">普陀区</td>
+        		            <td class="numeric">454354</td>
+        		            <td class="numeric">3432</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">11.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>9</td>
+        		            <td class="numeric">宝山区</td>
+        		            <td class="numeric">252355</td>
+        		            <td class="numeric">433</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">12.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>10</td>
+        		            <td class="numeric">闵行区</td>
+        		            <td class="numeric">45343</td>
+        		            <td class="numeric">2544</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">6.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>11</td>
+        		            <td class="numeric">青浦区</td>
+        		            <td class="numeric">436436</td>
+                            <td class="numeric">436</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">6.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>12</td>
+        		            <td class="numeric">嘉定区</td>
+        		            <td class="numeric">67576</td>
+        		            <td class="numeric">767</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">9.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>13</td>
+        		            <td class="numeric">松江区</td>
+        		            <td class="numeric">785678</td>
+        		            <td class="numeric">7685</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">8.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>14</td>
+        		            <td class="numeric">奉贤区</td>
+        		            <td class="numeric">4567356</td>
+        		            <td class="numeric">676</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">2.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>15</td>
+        		            <td class="numeric">金山区</td>
+        		            <td class="numeric">674567</td>
+        		            <td class="numeric">4256</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">12.61%</td>
+        		        </tr>
+        		        <tr>
+        		            <td>16</td>
+        		            <td class="numeric">崇明区</td>
+        		            <td class="numeric">365567</td>
+        		            <td class="numeric">5664</td>
+        		            <td class="numeric">70.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		            <td class="numeric">00:04:22</td>
+        		            <td class="numeric">10.00%</td>
+        		            <td class="numeric">32.61%</td>
+        		        </tr>
+        		    </tbody>
+        		</table>
+        	</div>
+        	<div class="clear"></div>
+        </div>
+    </body>
+</html>

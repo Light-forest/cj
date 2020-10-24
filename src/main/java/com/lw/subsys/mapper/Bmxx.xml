@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="com.lw.subsys.mapper.BmxxMapper">
+	<insert id="add" parameterType="Bmxx" >
+		insert into bmxx ( bmid,bsid,bsqh,bmbh,sjhm,yxjsm,sfzxm,sfzhm,sfzzp,brwxh,wdddh,sfhmd,rhyy,bmsj,bscj,bsmc,jjje,bszm,bz00,bz01,bz02,bz03,bz04,bz05,bz06,bz07,bz08,bz09,bz10,bz11,bz12,bz13,bz14,bz15,bz16,bz17,bz18,bz19 ) values (#{bmid},#{bsid},#{bsqh},#{bmbh},#{sjhm},#{yxjsm},#{sfzxm},#{sfzhm},#{sfzzp},#{brwxh},#{wdddh},#{sfhmd},#{rhyy},#{bmsj},#{bscj},#{bsmc},#{jjje},#{bszm},#{bz00},#{bz01},#{bz02},#{bz03},#{bz04},#{bz05},#{bz06},#{bz07},#{bz08},#{bz09},#{bz10},#{bz11},#{bz12},#{bz13},#{bz14},#{bz15},#{bz16},#{bz17},#{bz18},#{bz19})
+	</insert>
+	<delete id="delete" parameterType="string" >
+		delete from bmxx where bmid= #{bmid}
+	</delete>
+	<update id="update" parameterType="Bmxx" >
+		update bmxx set bmid=#{bmid},bsid=#{bsid},bsqh=#{bsqh},bmbh=#{bmbh},sjhm=#{sjhm},yxjsm=#{yxjsm},sfzxm=#{sfzxm},sfzhm=#{sfzhm},sfzzp=#{sfzzp},brwxh=#{brwxh},wdddh=#{wdddh},sfhmd=#{sfhmd},rhyy=#{rhyy},bmsj=#{bmsj},bscj=#{bscj},bsmc=#{bsmc},jjje=#{jjje},bszm=#{bszm},bz00=#{bz00},bz01=#{bz01},bz02=#{bz02},bz03=#{bz03},bz04=#{bz04},bz05=#{bz05},bz06=#{bz06},bz07=#{bz07},bz08=#{bz08},bz09=#{bz09},bz10=#{bz10},bz11=#{bz11},bz12=#{bz12},bz13=#{bz13},bz14=#{bz14},bz15=#{bz15},bz16=#{bz16},bz17=#{bz17},bz18=#{bz18},bz19=#{bz19} where bmid=#{bmid}
+	</update>
+
+	<select id="list" resultType="Bmxx" >
+		select * from  bmxx where 1=1 ${conOrderByPage}
+	</select>
+
+	<select id="total" resultType="int" >
+		select count(*) from bmxx  where 1=1  ${con}
+	</select>
+
+
+	<select id="get" parameterType="string" resultType="Bmxx">
+		select * from   bmxx  where bmid= #{bmid}
+	</select>
+</mapper>

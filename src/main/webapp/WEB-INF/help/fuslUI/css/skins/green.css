@@ -1,0 +1,112 @@
+.body-bg{ background: #f4f8fb;}
+.header{
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	border:1px #d9dddf solid \9;
+}
+.widget{background: #fff;}
+.sidebar{
+    background-color: #313541!important;
+}
+.brand{
+	background: #1fb5ac;
+}
+.brand .icon-hospital{
+	color: #fff!important;
+}
+.brand .brand-caption-sub{
+	color: #fff;
+}
+.menu-min .brand p{ display: none;}
+.nav-list > li {
+	border-color: #292c38!important;
+	background: #313541!important;
+}
+.nav-list > li > a {
+	color: #ccc;
+}
+.nav-list > li:before {
+  background-color: #1fb5ac;
+}
+.nav-list > li .submenu > li > a {
+	color: #ccc!important;
+	border-bottom: 1px #262626 dotted!important;
+}
+.nav-list > li > .submenu {
+	border-top: 1px solid #262626!important;
+}
+.nav-list > li > .submenu:before {
+	border-right: 1px #262626 dotted!important;
+}
+.nav-list li.active > a:after {
+	border-right-color: #1fb5ac!important;
+	-moz-border-right-colors: #1fb5ac!important;
+}
+.nav-list > li.active:after {
+	border-color: #1fb5ac!important;
+}
+.nav-list > li > .submenu li.open > a {
+	color: #888!important;
+	background: #282a32!important;
+}
+.nav-list > li > .submenu > li:before {
+	border: 1px dotted;
+    border-width: 1px 0 0;
+    border-color: #000;
+}
+.nav-list li.open .dropdown-toggle{
+	background: #2d313a!important;
+}
+.tabs-card li:hover {
+	color: #13a098;
+}
+.tabs-brief li:hover {
+	color: #13a098;
+}
+.tabs-brief li.active{
+	border-bottom: 2px #13a098 solid;
+}
+.widget{background: #fff;}
+.ibox-body li a:hover{
+	color:#fff;	
+	background-color:#1fb5ac;
+	background-image:-moz-linear-gradient(top, #2dc4bb, #1fb5ac);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#2dc4bb), to(#1fb5ac));
+	background-image:-webkit-linear-gradient(top, #2dc4bb, #1fb5ac);
+	background-image:-o-linear-gradient(top, #2dc4bb, #1fb5ac);
+	background-image:linear-gradient(to bottom, #2dc4bb, #1fb5ac);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2dc4bb', endColorstr='#ff2dc4bb', GradientType=0)
+}
+.tag-fornt {
+	background-color: #1fb5ac;    
+    color: #fff;       
+}
+.search{ background: #e5ecf1;color: #666; border: 1px #dee1e7 solid;}
+/*btn*/
+.btn-primary,.badge-primary,.label-primary{ background: #1fb5ac; color: #fff; }
+.btn-primary:hover{ background: #13a098; }
+
+.tag-fornt {
+	background-color: #1fb5ac;    
+    color: #fff;       
+}
+
+.table-headBg thead th{background:#f4f8fb!important;color: #1fb5ac!important;}
+
+/* 引用 */.quote-elem{border-left-color:#1fb5ac;}
+/*步骤条*/
+.step-container li.step-past {background-color: #13a098;}  
+.step-container li.step-current {background-color: #1fb5ac;  }  
+.step-container .arrow-past .arrow-pre { border-left: 15px solid #13a098;}  
+.step-container .arrow-past .arrow-next{border-top: 15px solid #1fb5ac;border-bottom: 15px solid #1fb5ac; } 
+.step-container .arrow-past .arrow-after{ border-top: 15px solid #13a098;border-bottom: 15px solid #13a098; }
+.step-container .arrow-current .arrow-pre { border-left: 15px solid #1fb5ac;  }  
+.step-fix-width-round .finished .round{border:4px solid #13a098;background-color:#13a098;}
+.step-fix-width-round .finished .bar{background-color: #13a098;}
+.step-fix-width-round .current .round{border:4px solid #1fb5ac;color:#fff;background-color:#1fb5ac;}
+.step-fix-width-round .current .bar{background-color: #1fb5ac;}
+.steps-round-auto .finished .round{border: 4px solid #13a098;background-color: #13a098;}
+.steps-round-auto .finished .bar{background-color: #13a098;}
+.steps-round-auto .current .round{border:4px solid #1fb5ac;color: #FFFFFF;background-color: #1fb5ac;}
+.steps-round-auto .current .bar{background-color: #1fb5ac;}

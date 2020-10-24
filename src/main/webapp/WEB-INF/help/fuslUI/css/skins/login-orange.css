@@ -1,0 +1,32 @@
+/*@功能：1、定义项目的框架样式
+ */ 
+.login-bg{ 
+	background:#020512 url(../../images/login/loginBg-orange.jpg) center center;
+	background-size: cover;
+	overflow: hidden;
+}
+.login-warp{ width: 362px; margin: auto; margin-top: 154px;}
+.login-caption{ font-size: 32px; color: #fff;text-align: center;}
+.login-caption .icon-hospital{}
+.login-box{ margin-top:60px; background:#fff; padding: 30px 40px; width: 362px; height: 307px;}
+.caption-warp{ position: relative;}
+.caption-line{ border-bottom: 1px #e3e3e4 solid; height: 10px; z-index: 0; width: 100%;}
+.caption-s{ color: #072c68; font-size: 16px; background: #fff; position: absolute; top: 0; left: 0; right: 0;bottom: 0; margin: auto; z-index: 1; width: 75px; text-align: center;}
+.login-form{ margin-top: 15px;}
+.login-form li{ clear: both; height: 44px; padding: 15px 0;}
+.login-icon{float: left; font-size: 14px; text-align: center; vertical-align: middle; width: 44px; height: 44px; line-height: 44px; background: #e6e6e6; color: #999; border-radius: 3px 0 0 3px;}
+.login-input{ height: 44px; line-height: 40px; width: 238px; padding: 0 20px; background: #fff; border: none; border-radius: 0 3px 3px 0; font-size: 14px; border-top: 1px #e6e6e6 solid; border-right: 1px #e6e6e6 solid; border-bottom: 1px #e6e6e6 solid;}
+.showpwd-warp{ position: relative; margin: 10px 0;}
+.showpwd{ display:inline-block; width:16px; height:16px; background:url(../../images/login/showPwd.png) no-repeat center center; background-size:16px 16px; cursor:pointer; position: absolute; right: 10px; top: 28px; z-index: 2;}
+.showpwd.hidepwd{ background-image:url(../../images/login/hidePwd.png);}
+.error{ visibility: hidden;}
+.btn{box-shadow: 0 1px 1px rgba(0,0,0,0.3);}
+.copyright { color: #fff; text-align: center;}
+.copyright .icon-bsoftlogo{ font-size: 20px; vertical-align: middle;}
+
+.btn-primary,.badge-primary,.label-primary{ background: #ed6519!important; color: #fff!important; }
+.btn-primary:hover{ background: #d4550d!important; }
+.icheckbox_flat,
+.iradio_flat{
+	background-image: url(../../images/form/iradio_flat_orange.png);
+}
